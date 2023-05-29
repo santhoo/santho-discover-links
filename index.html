@@ -8,42 +8,92 @@
 			content="width=device-width, initial-scale=1.0"
 		/>
 		<title>Santho's links</title>
+
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./style.css" />
 	</head>
+
 	<body>
-		<header>
-			<img src="" alt="" />
-			<p>@santhoo</p>
-			<button>Toggle</button>
-		</header>
+		<div class="container">
+			<header>
+				<div id="profile">
+					<div class="avatar">
+						<img
+							src="./assets/avatar-dark.jpg"
+							alt="Foto de Santiago dando risada com fundo escuro"
+						/>
+					</div>
+					<p>@santhoo</p>
+				</div>
 
-		<main>
-			<ul>
-				<li>
-					<a href="https://www.github.com/santhoo"
-						>Repositórios</a
+				<div id="switch">
+					<button onclick="toggleMode()"></button>
+				</div>
+			</header>
+
+			<main>
+				<ul id="links">
+					<li>
+						<a href="https://www.github.com/santhoo"
+							>Repositórios</a
+						>
+					</li>
+					<li>
+						<a href="#">Baixa meu e-book</a>
+					</li>
+					<li>
+						<a href="mailto:santho@santho.com.br"
+							>Mande um e-mail</a
+						>
+					</li>
+				</ul>
+			</main>
+
+			<footer>
+				<ul id="social">
+					<li>
+						<a href="https://www.github.com/santhoo">
+							<ion-icon name="logo-github"></ion-icon>
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.linkedin.com/in/santiago-sipoli/"
+							><ion-icon name="logo-linkedin"></ion-icon
+						></a>
+					</li>
+				</ul>
+
+				<p class="rocket">
+					Feito com ♥ para
+					<a href="https://rocketseat.com.br/"
+						>Rocketseat</a
 					>
-				</li>
-				<li>
-					<a href="#">Baixa meu e-book</a>
-				</li>
-				<li>
-					<a href="mailto:santho@santho.com.br"
-						>Mande um e-mail</a
-					>
-				</li>
-			</ul>
-		</main>
+				</p>
+			</footer>
+		</div>
 
-		<footer>
-			<ul>
-				<li><a href="#">Github</a></li>
-				<li><a href="#">LinkedIn</a></li>
-			</ul>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
 
-			<p>
-				Feito com Feito com ♥ para
-				<a href="https://rocketseat.com.br/">Rocketseat</a>
-			</p>
-		</footer>
+		<script src="./scripts.js"></script>
 	</body>
 </html>
